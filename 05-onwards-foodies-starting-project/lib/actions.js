@@ -8,8 +8,8 @@ export const shareMeal = async (formData) => {
     summary: formData.get('summary'),
     instructions: formData.get('instructions'),
     image: formData.get('image'),
-    name: formData.get('name'),
-    email: formData.get('email'),
+    creator: formData.get('name'),
+    creator_email: formData.get('email'),
   };
 
   await saveMeal(meal);
