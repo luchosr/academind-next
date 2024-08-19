@@ -1,5 +1,11 @@
 const News = ({ params }) => {
-  return <article>The news is {params.newsSlug}</article>;
+  const newsId = params.newsSlug;
+  return (
+    <article>
+      <h1>The news is {params.newsSlug}</h1>
+      <p>News ID: {newsId}</p>
+    </article>
+  );
 };
 
 export default News;
